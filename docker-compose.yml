@@ -19,13 +19,12 @@ services:
     restart: always
     environment:
       MYSQL_DATABASE: mysqldb
-      MYSQL_ROOT_USER: mysql_user
-      MYSQL_PASSWORD: password
+      MYSQL_ROOT_USER: root
       MYSQL_ROOT_PASSWORD: root_password
     volumes:
       - ./mysql:/var/lib/mysql
     ports:
-      - 9906:3306
+      - 3306:3306
     # networks:
     #   - shared
   phpmyadmin:

@@ -1,13 +1,13 @@
 INSERT INTO users(user_firstname, user_lastname, user_password, user_email, user_gender, user_birthdate)
-       VALUES ("Armin", "Virgil", "armin@gmail.com", "M", "2001-02-05");
+       VALUES ("Armin", "Virgil", "password", "armin@gmail.com", "M", "2001-02-05");
 INSERT INTO users(user_firstname, user_lastname, user_nickname, user_password, user_email, user_gender, user_birthdate, user_status)
-       VALUES ("Paul", "James", "Pynch", "paul@gmail.com", "M", "1998-12-19", "S");
+       VALUES ("Paul", "James", "Pynch", "password", "paul@gmail.com", "M", "1998-12-19", "S");
 INSERT INTO users(user_firstname, user_lastname, user_password, user_email, user_gender, user_birthdate)
-       VALUES ("Chris", "Wilson", "chris@gmail.com", "M", "1996-01-18");
+       VALUES ("Chris", "Wilson", "password", "chris@gmail.com", "M", "1996-01-18");
 INSERT INTO users(user_firstname, user_lastname, user_password, user_email, user_gender, user_birthdate, user_status)
-       VALUES ("Rory", "Blue", "rory@gmail.com", "F", "1994-04-18", "M");
+       VALUES ("Rory", "Blue", "password", "rory@gmail.com", "F", "1994-04-18", "M");
 INSERT INTO users(user_firstname, user_lastname, user_password, user_email, user_gender, user_birthdate)
-       VALUES ("Andrea", "Surman", "andrea@gmail.com", "M", "1994-06-06");
+       VALUES ("Andrea", "Surman", "password", "andrea@gmail.com", "M", "1994-06-06");
 
 INSERT INTO posts(post_caption, post_time, post_public, post_by) VALUES ("Hello there!", "2017-12-23 00:50:06", "Y", 1);
 INSERT INTO posts(post_caption, post_time, post_public, post_by) VALUES ("Paul James has changed his profile picture.", "2017-12-23 00:50:06", "N", 2);

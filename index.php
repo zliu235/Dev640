@@ -194,7 +194,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { // A form is posted
             $userstatus = NULL;
         }
         // Check for Some Unique Constraints
-        $query = mysqli_query($conn, "SELECT user_nickname, user_email FROM users WHERE user_nickname = '$usernickname' OR user_email = '$useremail'");
+        $similar_users = "SELECT * FROM users WHERE user_nickname = $usernickname OR user_email = $useremail";
+        $query = mysqli_query($conn, $similar_users);
         if(mysqli_num_rows($query) > 0){
             $row = mysqli_fetch_assoc($query);
             if($usernickname == $row['user_nickname'] && !empty($usernickname)){
