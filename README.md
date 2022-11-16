@@ -1,8 +1,10 @@
 # Dev640
 Social Networking App Project for Dev640
 
+Demo here: https://dev640.herokuapp.com/
+
 ## To use docker
-Either in the github `codespace` or in your local dev environment. 
+In your local dev environment, download docker.
 1. Build docker image in place.
 ```
 docker build -t socialnetwork .
