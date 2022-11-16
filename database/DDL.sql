@@ -1,8 +1,8 @@
-DROP DATABASE socialnetwork;
-CREATE DATABASE socialnetwork;
+-- CREATE DATABASE IF NOT EXISTS socialnetwork;
+-- USE socialnetwork;
 
 CREATE TABLE users (
-user_id             INT NOT NULL AUTO_INCREMENT,
+user_id             INT(11) NOT NULL AUTO_INCREMENT,
 user_firstname      VARCHAR(20) NOT NULL,  
 user_lastname       VARCHAR(20) NOT NULL,
 user_nickname       VARCHAR(20),
@@ -25,7 +25,7 @@ FOREIGN KEY (user2_id) REFERENCES users(user_id)
 );
 
 CREATE TABLE posts (
-post_id             INT NOT NULL AUTO_INCREMENT,
+post_id             INT(11) NOT NULL AUTO_INCREMENT,
 post_caption        TEXT NOT NULL,
 post_time           TIMESTAMP NOT NULL, 
 post_public         CHAR(1) NOT NULL,
