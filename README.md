@@ -16,7 +16,7 @@ docker-compose up
 ```
 
 Checkout:
-Website: http://127.0.0.1:80
-DB: http://127.0.0.1:8080
+- Website: http://127.0.0.1:80
+- DB: http://127.0.0.1:8080
 
 
