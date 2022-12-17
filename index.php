@@ -17,16 +17,21 @@ ob_start();
         .container{
             margin: 40px auto;
             width: 400px;
+;
         }
         .content {
             padding: 30px;
             background-color: white;
             box-shadow: 0 0 5px #4267b2;
         }
+        
+        body {
+            background-image: url('data/images/resource/westcliff.jpg');
+        }
     </style>
 </head>
 <body>
-    <h1>Welcome to Pynch</h1>
+    <h1>Welcome to Westcliff Social Network</h1>
     <div class="container">
         <div class="tab">
             <button class="tablink active" onclick="openTab(event,'signin')" id="link1">Login</button>
